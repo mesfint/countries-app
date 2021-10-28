@@ -9,10 +9,12 @@ import { searchCountry } from "../../../redux/actions/country";
 
 export default function SearchInput() {
   const dispatch = useDispatch();
+  const searchTerm = useSelector((state: AppState)=> state.countries.searchTerm)
 
   return (
     <div>
       <input
+        value={searchTerm}
         onChange={(e) => dispatch(searchCountry(e.target.value))}
         placeholder="Search country"
       />

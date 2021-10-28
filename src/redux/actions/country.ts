@@ -39,6 +39,7 @@ export function removeCountry(country: Country): CountryActions {
 
 //Search country
 export function searchCountry(searchTerm: string): CountryActions {
+  console.log(searchTerm)
   return {
     type: SEARCH_COUNTRY,
     payload: {

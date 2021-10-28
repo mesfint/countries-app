@@ -11,6 +11,7 @@ const initState: AppState = {
   countries: {
     searchTerm: "",
     allCountries: [],
+    filteredCountries: []
   },
   countryCart: {
     cartCountries: [],

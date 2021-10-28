@@ -21,7 +21,7 @@ export default function Home() {
   const dispatch = useDispatch();
 
   const countries = useSelector(
-    (state: AppState) => state.countries?.allCountries
+    (state: AppState) => state.countries?.filteredCountries
   );
 
   //Get countries cart

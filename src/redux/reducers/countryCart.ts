@@ -13,13 +13,13 @@ export default function countryCart(
 ) {
   switch (action.type) {
     case ADD_COUNTRY:
-      const { country } = action.payload;
+      const  country  = action.payload.country;
       if (state.cartCountries.find((c) => c.name === country.name)) {
         return state;
       }
       return {
         ...state,
-        cartCountries: [...state.cartCountries, action.payload?.country],
+        cartCountries: [...state.cartCountries, action.payload.country],
       };
     case REMOVE_COUNTRY: {
       const { country } = action.payload;

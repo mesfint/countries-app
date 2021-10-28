@@ -35,6 +35,7 @@ export type FetchCountryAction = {
 //Create country state type
 export type CountryState = {
   allCountries: Country[];
+  filteredCountries: Country[]
   searchTerm: string;
 };
 
